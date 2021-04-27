@@ -5,6 +5,9 @@ from django.shortcuts import render
 from .models import Upload, UploadPrivate
 
 
+from .models import Upload, UploadPrivate
+
+
 def image_upload(request):
     if request.method == 'POST':
         image_file = request.FILES['image_file']
